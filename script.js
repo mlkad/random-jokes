@@ -49,10 +49,12 @@ function clearFavorites() {
   localStorage.removeItem('favorites');
   favQuotes = [];
   favList.innerHTML = ''; 
+  sound.play();
 }
 
 function closeFavList() {
   favContainer.classList.add('hidden');
+  sound.play();
 }
 
 function copyToClipBoard() {
