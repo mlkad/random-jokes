@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dd6b6d9687.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <button onclick='saveFavorite()' class='favorites' id='favorites'><i id='heart'
+          class="fa-solid fa-heart"></i></button>
+      <button onclick='showFavorites()' class='favorites' id='clipboard'><i class="fa-solid fa-list"></i></button>
+      <button onclick='copyToClipBoard()' class='favorites' id='clipboard'><i class="fa-solid fa-copy"></i></button>
+    </div>
+    <blockquote></blockquote>
+    <button onclick='getData()' class='main-btn'>Generate</button>
+  </div>
+
+  <div class="favorite-container hidden">
+    <span>Favorite Quotes</span>
+    <ul id="fav-list"></ul>
+    <div class="buttons">
+      <button onclick='clearFavorites()' id="clear-button" class='main-btn'>Clear</button>
+      <button onclick='closeFavList()' id="close-favorite" class='main-btn'>Close</button>
+    </div>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+
+</html>
